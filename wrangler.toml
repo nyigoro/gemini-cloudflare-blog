@@ -1,0 +1,14 @@
+name = "gemini-cloudflare-blog"
+main = "src/index.ts"
+compatibility_date = "2024-04-05"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "gemini-blog-db"
+database_id = "f1ab4d57-9f84-45d8-a7d9-d5382ede82a0"
+
+[vars]
+GEMINI_API_KEY = ""
+
+[triggers]
+crons = ["0 * * * *"] # Run once every hour
